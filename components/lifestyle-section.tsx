@@ -33,7 +33,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.15 }}
             >
-              ELEVATE{" "}
+              KIWI{" "}
             </motion.span>
             <motion.span
               className="text-[#BA0807] inline-block"
@@ -42,7 +42,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.25 }}
             >
-              DIGITAL
+              DIGITAL.
             </motion.span>
           </h2>
           <motion.p
@@ -52,7 +52,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            We are a results-driven marketing agency focused on growth, performance, and measurable ROI. We turn clicks into customers and scale your business to new heights.
+            We are Addis Ababa's full-service creative marketing agency. From brand identity and cinematic video production to viral social media, web development, and SEO — we handle the entire pipeline so your brand dominates online, grows without limits, and becomes the one everyone is talking about.
           </motion.p>
         </motion.div>
 

@@ -100,7 +100,7 @@ export function HeroSection() {
                 animate={{ scale: [1, 1.2, 1], opacity: [1, 0.7, 1] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               />
-              DIGITAL MARKETING AGENCY
+              KIWI DIGITAL · ADDIS ABABA
             </motion.div>
 
             <div className="space-y-1 overflow-hidden">
@@ -115,7 +115,7 @@ export function HeroSection() {
                   custom={1}
                   className="inline-block"
                 >
-                  TURNING CLICKS
+                  WE BUILD BRANDS
                 </motion.span>
               </motion.h1>
               <motion.h1
@@ -129,7 +129,7 @@ export function HeroSection() {
                   custom={2}
                   className="inline-block text-[#BA0807]"
                 >
-                  INTO CUSTOMERS
+                  THE WORLD TALKS ABOUT
                 </motion.span>
               </motion.h1>
               <motion.p
@@ -139,7 +139,7 @@ export function HeroSection() {
                 custom={3}
                 className="text-lg md:text-xl font-mono text-[#121212]/60 tracking-tight pt-2 max-w-md"
               >
-                We help startups and growing businesses generate leads, increase conversions, and accelerate revenue growth through modern digital marketing strategies.
+                From scroll-stopping video production and viral social media to full brand launches and SEO dominance — we handle everything so your brand grows faster, louder, and smarter.
               </motion.p>
             </div>
 
@@ -161,7 +161,7 @@ export function HeroSection() {
                   whileHover={{ x: "200%" }}
                   transition={{ duration: 0.6 }}
                 />
-                <span className="relative z-10">Book a Free Consultation</span>
+                <span className="relative z-10">Start Growing Today</span>
                 <motion.svg
                   className="w-4 h-4 relative z-10"
                   fill="none"
@@ -180,7 +180,7 @@ export function HeroSection() {
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                View Our Work
+                See Our Results
               </motion.button>
             </motion.div>
 
@@ -191,7 +191,7 @@ export function HeroSection() {
               custom={5}
               className="flex flex-wrap gap-4 pt-2"
             >
-              {["Data-Driven", "ROI Focused", "Growth Partner", "Expert Team"].map((benefit, i) => (
+              {["Full-Service Agency", "In-House Production", "Proven Results", "Based in Addis"].map((benefit, i) => (
                 <motion.div
                   key={benefit}
                   className="flex items-center gap-2 text-xs font-mono text-[#121212]/60"

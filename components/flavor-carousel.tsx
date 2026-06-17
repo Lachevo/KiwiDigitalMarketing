@@ -295,16 +295,6 @@ export function FlavorCarousel() {
         <div className="relative">
           <div className="flex items-center justify-center gap-6">
 
-            {/* Prev */}
-            <motion.button
-              onClick={() => paginate(-1)}
-              className="hidden md:flex w-12 h-12 rounded-full border-2 border-[#121212]/20 items-center justify-center hover:bg-[#121212] hover:text-white hover:border-[#121212] transition-colors flex-shrink-0"
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </motion.button>
 
             {/* Card */}
             <AnimatePresence mode="wait" custom={direction}>
@@ -319,7 +309,7 @@ export function FlavorCarousel() {
                 style={{ perspective: 1200 }}
               >
                 <motion.div
-                  className="bg-white rounded-3xl border border-[#121212]/10 shadow-xl overflow-hidden"
+                  className="bg-white rounded-3xl border border-[#121212]/10 shadow-xl overflow-hidden relative"
                   style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
@@ -328,6 +318,30 @@ export function FlavorCarousel() {
 
                     {/* Image panel */}
                     <div className="relative overflow-hidden bg-[#121212]/5">
+
+                      {/* Prev arrow — left edge of image, vertically centered */}
+                      <motion.button
+                        onClick={() => paginate(-1)}
+                        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 w-11 h-11 rounded-full border-2 border-white/50 bg-black/50 backdrop-blur-sm items-center justify-center text-white hover:border-white hover:bg-black/80 transition-colors"
+                        whileHover={{ scale: 1.12 }}
+                        whileTap={{ scale: 0.88 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                        aria-label="Previous project"
+                      >
+                        <ChevronLeft className="w-5 h-5" />
+                      </motion.button>
+
+                      {/* Next arrow — right edge of image, vertically centered */}
+                      <motion.button
+                        onClick={() => paginate(1)}
+                        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 w-11 h-11 rounded-full border-2 border-white/50 bg-black/50 backdrop-blur-sm items-center justify-center text-white hover:border-white hover:bg-black/80 transition-colors"
+                        whileHover={{ scale: 1.12 }}
+                        whileTap={{ scale: 0.88 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                        aria-label="Next project"
+                      >
+                        <ChevronRight className="w-5 h-5" />
+                      </motion.button>
                       <motion.div
                         key={displayImg}
                         initial={{ opacity: 0, scale: 1.05 }}
@@ -460,16 +474,7 @@ export function FlavorCarousel() {
               </motion.div>
             </AnimatePresence>
 
-            {/* Next */}
-            <motion.button
-              onClick={() => paginate(1)}
-              className="hidden md:flex w-12 h-12 rounded-full border-2 border-[#121212]/20 items-center justify-center hover:bg-[#121212] hover:text-white hover:border-[#121212] transition-colors flex-shrink-0"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              <ChevronRight className="w-5 h-5" />
-            </motion.button>
+
           </div>
 
           {/* Mobile buttons */}

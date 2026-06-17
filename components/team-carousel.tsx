@@ -353,17 +353,6 @@ export function TeamCarousel() {
         <div className="relative">
           <div className="flex items-center justify-center gap-6">
 
-            {/* Prev button */}
-            <motion.button
-              onClick={() => paginate(-1)}
-              className="hidden md:flex w-12 h-12 rounded-full border-2 border-white/20 items-center justify-center hover:border-white hover:bg-white/10 text-white transition-colors flex-shrink-0"
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              aria-label="Previous team member"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </motion.button>
 
             {/* Slide card */}
             <AnimatePresence mode="wait" custom={direction}>
@@ -378,11 +367,34 @@ export function TeamCarousel() {
                 style={{ perspective: 1200 }}
               >
                 <motion.div
-                  className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/10 shadow-2xl"
+                  className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/10 shadow-2xl relative"
                   style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
                 >
+                  {/* Prev arrow — overlaid on left edge of avatar column */}
+                  <motion.button
+                    onClick={() => paginate(-1)}
+                    className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 w-11 h-11 rounded-full border-2 border-white/30 bg-black/40 backdrop-blur-sm items-center justify-center text-white hover:border-white hover:bg-black/70 transition-colors"
+                    whileHover={{ scale: 1.12 }}
+                    whileTap={{ scale: 0.88 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    aria-label="Previous team member"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </motion.button>
+
+                  {/* Next arrow — overlaid on right edge of avatar column */}
+                  <motion.button
+                    onClick={() => paginate(1)}
+                    className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 w-11 h-11 rounded-full border-2 border-white/30 bg-black/40 backdrop-blur-sm items-center justify-center text-white hover:border-white hover:bg-black/70 transition-colors"
+                    whileHover={{ scale: 1.12 }}
+                    whileTap={{ scale: 0.88 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    aria-label="Next team member"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </motion.button>
                   <div className="grid md:grid-cols-2 gap-8 items-center">
 
                     {/* Avatar */}
@@ -506,17 +518,7 @@ export function TeamCarousel() {
               </motion.div>
             </AnimatePresence>
 
-            {/* Next button */}
-            <motion.button
-              onClick={() => paginate(1)}
-              className="hidden md:flex w-12 h-12 rounded-full border-2 border-white/20 items-center justify-center hover:border-white hover:bg-white/10 text-white transition-colors flex-shrink-0"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              aria-label="Next team member"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </motion.button>
+
           </div>
 
           {/* Mobile buttons */}

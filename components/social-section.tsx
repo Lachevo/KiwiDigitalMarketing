@@ -6,22 +6,22 @@ import { MessageSquareQuote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah Jenkins",
-    role: "CMO, TechFlow",
-    text: "Elevate Digital transformed our lead generation. We saw a 210% increase in qualified SQLs within the first quarter.",
-    metrics: "+210% SQLs",
+    name: "Dawit Teklay",
+    role: "CEO, Fly Addis Ethiopia",
+    text: "Kiwi Digital completely transformed our digital presence. Their launch branding and video campaigns scaled our audience to over 214K followers and drove massive organic engagement.",
+    metrics: "214.5K+ Followers",
   },
   {
-    name: "David Chen",
-    role: "Founder, Bloom E-Commerce",
-    text: "Their strategic approach to PPC and CRO helped us double our conversion rate and achieve a 4x ROI on ad spend.",
-    metrics: "4x Ad ROI",
+    name: "Tigist Assefa",
+    role: "Founder, Cenacle Reflexology",
+    text: "The team's full-suite video production and campaigns drove over 3 million views and helped us scale to 58K+ followers. They truly understand modern video storytelling.",
+    metrics: "3M+ Views",
   },
   {
-    name: "Amanda Rivera",
-    role: "Marketing Director, ScaleUp SaaS",
-    text: "The SEO strategy executed by the team resulted in sustainable, long-term organic growth and massive brand visibility.",
-    metrics: "+300% Organic Traffic",
+    name: "Samuel Kebede",
+    role: "Operations Director, Gojo Jobs",
+    text: "Their high-visibility content strategy and fast-paced video pipeline drove massive reach for our job openings, capturing over 700K+ views and bringing in high-quality candidates.",
+    metrics: "700K+ Views",
   },
 ]
 
@@ -138,7 +138,7 @@ export function SocialSection() {
         >
           <motion.a
             href="#contact"
-            className="flex items-center gap-2 bg-[#BA0807] text-[#121212] px-6 py-3 rounded-full font-bold text-sm tracking-wide relative overflow-hidden group"
+            className="flex items-center gap-2 bg-[#BA0807] text-white px-6 py-3 rounded-full font-bold text-sm tracking-wide relative overflow-hidden group"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}

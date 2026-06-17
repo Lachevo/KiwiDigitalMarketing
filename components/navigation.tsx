@@ -62,11 +62,12 @@ export function Navigation() {
   }
 
   const navLinks = [
-    { label: "Home", href: "#hero" },
+    { label: "Hero", href: "#hero" },
     { label: "Services", href: "#services" },
-    { label: "Results", href: "#results" },
-    { label: "Case Studies", href: "#case-studies" },
-    { label: "Process", href: "#process" },
+    { label: "About Us", href: "#about-us" },
+    { label: "Our Work", href: "#our-work" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Contact", href: "#contact" },
   ]
 
   return (

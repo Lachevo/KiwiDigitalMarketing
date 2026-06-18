@@ -413,6 +413,17 @@ export function TeamCarousel() {
                             src={currentMember.avatar}
                             alt={currentMember.name}
                             className="w-full h-full object-cover"
+                            style={
+                              currentMember.id === 4
+                                ? {
+                                  objectPosition: "top",
+                                  transform: "scale(1.1) translateX(5%)",
+                                  transformOrigin: "top center"
+                                }
+                                : {
+                                  objectPosition: [1, 7, 12, 13, 14].includes(currentMember.id) ? "top" : "center"
+                                }
+                            }
                           />
                         </div>
                       </div>

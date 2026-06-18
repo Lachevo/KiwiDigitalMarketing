@@ -22,7 +22,7 @@ const services = [
     title: "Full Launch Branding",
     tagline: "Your brand. Built to dominate.",
     description:
-      "We craft the complete visual and strategic identity of your brand from scratch — logo design, brand guidelines, color system, typography, and positioning — so you launch with authority.",
+      "We craft the complete visual and strategic identity of your brand from scratch logo design, brand guidelines, color system, typography, and positioning so you launch with authority.",
     deliverables: [
       "Logo & Visual Identity",
       "Brand Guidelines",
@@ -39,7 +39,7 @@ const services = [
     title: "Marketing Strategy & Campaigns",
     tagline: "Data-driven plans. Real-world results.",
     description:
-      "We build comprehensive marketing roadmaps and execute high-impact campaigns across every relevant channel — built to acquire customers, grow awareness, and outpace competitors.",
+      "We build comprehensive marketing roadmaps and execute high-impact campaigns across every relevant channel built to acquire customers, grow awareness, and outpace competitors.",
     deliverables: [
       "Growth Roadmap",
       "Multi-Channel Campaigns",
@@ -73,7 +73,7 @@ const services = [
     title: "Social Media Management",
     tagline: "Consistent presence. Growing community.",
     description:
-      "We take over your social channels end-to-end — daily content creation, scheduling, community management, and analytics — keeping your brand active, relevant, and growing every day.",
+      "We take over your social channels end-to-end daily content creation, scheduling, community management, and analytics keeping your brand active, relevant, and growing every day.",
     deliverables: [
       "Daily Content Creation",
       "Community Management",
@@ -107,7 +107,7 @@ const services = [
     title: "SEO",
     tagline: "Own the search results. Own the market.",
     description:
-      "We architect technical and content SEO strategies that move your brand to the top of search rankings — driving consistent, compounding organic traffic and qualified leads for months and years to come.",
+      "We architect technical and content SEO strategies that move your brand to the top of search rankings driving consistent, compounding organic traffic and qualified leads for months and years to come.",
     deliverables: [
       "Technical SEO Audit",
       "Keyword Strategy",

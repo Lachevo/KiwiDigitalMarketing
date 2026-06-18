@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: "We help startups and growing businesses generate leads, increase conversions, and accelerate revenue growth through modern digital marketing strategies.",
   keywords: ["digital marketing", "seo", "ppc", "social media", "web development", "growth"],
   icons: {
-    icon: '/kiwiLogo.png',
+    icon: '/kiwiLogo-cropped.png',
   },
     generator: 'v0.app'
 }
